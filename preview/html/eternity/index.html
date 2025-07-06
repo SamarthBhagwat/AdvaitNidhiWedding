@@ -82,7 +82,7 @@
                     <a href="#section-4">Bridesmaids</a>
                 </li>
                 <li>
-                    <a href="#section-5">Events</a>
+                    <a href="#section-events">Events</a>
                 </li>
                 <li>
                     <a href="#section-6">Rsvp</a>
@@ -114,7 +114,7 @@
                             <a href="#section-4">Bridesmaids</a>
                         </li>
                         <li>
-                            <a href="#section-5">Events</a>
+                            <a href="#section-events">Events</a>
                         </li>
                         <li>
                             <a href="#section-6">Rsvp</a>
@@ -380,28 +380,38 @@
             </div>
 
             <div class="row date-container">
-                <div class="col-1">
-                <h3 class="date">14th Nov, 2025</h3>
-                <span class="day-location">Haldi Ceremony</span>
-                <span class="day-time">Morning</span>
+                <div class="small-12 medium-6 large-3 columns">
+                <div class="event-card">
+                    <h3 class="date">14th Nov, 2025</h3>
+                    <span class="day-location">Haldi Ceremony</span><br>
+                    <span class="day-time">Morning</span>
                 </div>
-                <div class="col-1">
-                <h3 class="date">14th Nov, 2025</h3>
-                <span class="day-location">Sangeet Night</span>
-                <span class="day-time">Evening</span>
                 </div>
-                <div class="col-1">
-                <h3 class="date">15th Nov, 2025</h3>
-                <span class="day-location">Wedding Ceremony</span>
-                <span class="day-time">Afternoon</span>
+                <div class="small-12 medium-6 large-3 columns">
+                <div class="event-card">
+                    <h3 class="date">14th Nov, 2025</h3>
+                    <span class="day-location">Sangeet Night</span><br>
+                    <span class="day-time">Evening</span>
                 </div>
-                <div class="col-1">
-                <h3 class="date">15th Nov, 2025</h3>
-                <span class="day-location">Reception Party</span>
-                <span class="day-time">Evening</span>
+                </div>
+                <div class="small-12 medium-6 large-3 columns">
+                <div class="event-card">
+                    <h3 class="date">15th Nov, 2025</h3>
+                    <span class="day-location">Wedding Ceremony</span><br>
+                    <span class="day-time">Afternoon</span>
+                </div>
+                </div>
+                <div class="small-12 medium-6 large-3 columns">
+                <div class="event-card">
+                    <h3 class="date">15th Nov, 2025</h3>
+                    <span class="day-location">Reception Party</span><br>
+                    <span class="day-time">Evening</span>
+                </div>
                 </div>
             </div>
             </div>
+
+
 
 
             
@@ -568,6 +578,18 @@
         //         console.error(err);
         //     });
         // });
+        $(document).ready(function () {
+            // Smooth scroll for nav links
+            $('a[href^="#"]').on('click', function (e) {
+                var target = $($(this).attr('href'));
+                if (target.length) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 600); // adjust scroll speed
+                }
+            });
+        });
     </script>
 </body>
 

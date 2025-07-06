@@ -783,4 +783,46 @@ iframe {
   cursor: pointer;
 }
 
+.event-block {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+  .event-block {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+  }
+}
+
+.event-card {
+  background: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card .date {
+  font-size: 1.2rem;
+  color: #cc3366; /* or your accent color */
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.event-card .day-location,
+.event-card .day-time {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+}
+
+
+
 
